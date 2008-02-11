@@ -1,0 +1,37 @@
+OPML RELAX NG Schema
+Copyright (c) Tom Morris 2008.
+
+Released under the GNU General Public License
+See COPYING or http://www.gnu.org/copyleft/gpl.html
+
+The purpose of this RELAX NG schema is to provide a computer-readable and
+validatable guide to the OPML 1.0 and 2.0 specifications as defined at
+www.opml.org:
+
+- OPML 2.0 - http://opml.org/spec2
+- OPML 1.0 - http://opml.org/spec
+
+The specifications upon which the schema is based are copyright to UserLand
+Software, Inc. and Scripting News, Inc. See the specification pages above for
+details of the copyright. As per the copyright notices of those documents, the
+UserLand and Scripting News copyright notice is included in this bundle at
+docs/UL-SN-DISCLAIMER, which I humbly request you include with forked copies.
+
+The source for this project is managed using the open-source version control 
+and source control management tool, Git. Please see http://git.or.cz for 
+details on how to use Git. Trust me, it's cool. Once you start using it, 
+you'll wish that Subversion and CVS etc. would go away and the world would 
+start using Git.
+
+Please feel free to send patches to me - tom@tommorris.org - for inclusion in
+the central repository. Patches sought include both cleaning up and making
+more expressive the existing behaviour.
+
+I am currently seeking out the best way to implement vendor- and
+user-extensibility to the schema. I'd like to hear your input.
+
+I am also planning to add a test suite which would include a set of valid OPML 1.0 and 2.0 documents so that schema changes can be tested against existing documents for compatibility purposes.
+
+If you have never contributed to an open source project before, please read 
+this guide:
+http://drnicwilliams.com/2007/06/01/8-steps-for-fixing-other-peoples-code/
