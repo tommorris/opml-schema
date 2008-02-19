@@ -12,7 +12,10 @@
       <choice>
         <group>
           <attribute name="version">
-            <value type="string">1.0</value>
+			<choice>
+            	<value type="string">1.0</value>
+            	<value type="string">1.1</value>
+			</choice>
           </attribute>
           <ref name="head"/>
           <element name="body">
