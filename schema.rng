@@ -48,13 +48,15 @@
         <optional>
           <element name="dateCreated">
             <a:documentation xml:lang="en">A date-time, indicating when the document was created.</a:documentation>
-            <data type="dateTime" />
+<!--            <data type="dateTime" /> -->
+			<data type="string" />
           </element>
         </optional>
         <optional>
           <element name="dateModified">
             <a:documentation xml:lang="en">A date-time, indicating when the document was last modified.</a:documentation>
-            <data type="dateTime" />
+			<!--            <data type="dateTime" /> -->
+			<data type="string" />
           </element>
         </optional>
         <optional>
@@ -149,14 +151,16 @@
     <optional>
       <attribute name="category">
         <a:documentation xml:lang="en">A string of comma-separated slash-delimited category strings, in the format defined by the RSS 2.0 category element. To represent a "tag," the category string should contain no slashes.</a:documentation>
-        <value type="string" />
+<!--        <value type="string" /> -->
+		<text />
       </attribute>      
     </optional>
     <optional>
       <attribute name="created">
         <a:documentation xml:lang="en">The date and time that the outline node was created. Follows RFC 822 (eg. "Sat, 09 Apr 2007 14:57:36 GMT").</a:documentation>
-        <data type="dateTime" />
-      </attribute>      
+		<!--            <data type="dateTime" /> -->
+		<data type="string" />
+      </attribute>
     </optional>
   </define>
   <define name="onode1">
