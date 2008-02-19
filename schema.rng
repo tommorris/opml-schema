@@ -48,15 +48,13 @@
         <optional>
           <element name="dateCreated">
             <a:documentation xml:lang="en">A date-time, indicating when the document was created.</a:documentation>
-<!--            <data type="dateTime" /> -->
-			<data type="string" />
+            <ref name="rfc_822_opml_rx" />
           </element>
         </optional>
         <optional>
           <element name="dateModified">
             <a:documentation xml:lang="en">A date-time, indicating when the document was last modified.</a:documentation>
-			<!--            <data type="dateTime" /> -->
-			<data type="string" />
+            <ref name="rfc_822_opml_rx" />
           </element>
         </optional>
         <optional>
@@ -158,8 +156,7 @@
     <optional>
       <attribute name="created">
         <a:documentation xml:lang="en">The date and time that the outline node was created. Follows RFC 822 (eg. "Sat, 09 Apr 2007 14:57:36 GMT").</a:documentation>
-		<!--            <data type="dateTime" /> -->
-		<data type="string" />
+        <ref name="rfc_822_opml_rx" />
       </attribute>
     </optional>
   </define>
@@ -278,13 +275,13 @@
       <optional>
         <attribute name="whenFirstPlayed">
           <a:documentation xml:lang="en">The time/date the song was played for the first time.</a:documentation>
-          <data type="dateTime" />
+          <ref name="rfc_822_opml_rx" />
         </attribute>
       </optional>
     <optional>
       <attribute name="whenLastPlayed">
         <a:documentation xml:lang="en">The time/date that the song was played most recently.</a:documentation>
-        <data type="dateTime" />
+        <ref name="rfc_822_opml_rx" />
       </attribute>
     </optional>
     <optional>
@@ -296,6 +293,11 @@
   <define name="commasep">
     <data type="string">
       <param name="pattern">[\-+]?(\d+|\d+(\.\d+)?%)(,\s?(\d+|\d+(\.\d+)?%))*</param>
+    </data>
+  </define>
+  <define name="rfc_822_opml_rx">
+    <data type="string">
+      <param name="pattern">^((Mon|Tue|Wed|Thur|Fri|Sat|Sun), )?(\d+) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d{2,4}) (\d{2}):(\d{2})(:(\d{2})?) (\S{1,4}|(\+|\-)\d{4})$</param>
     </data>
   </define>
 </grammar>
