@@ -297,7 +297,7 @@
   </define>
   <define name="rfc_822_opml_rx">
     <data type="string">
-      <param name="pattern">^((Mon|Tue|Wed|Thur|Fri|Sat|Sun), )?(\d+) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d{2,4}) (\d{2}):(\d{2})(:(\d{2})?) (\S{1,4}|(\+|\-)\d{4})$</param>
+      <param name="pattern">((Mon|Tue|Wed|Thu|Fri|Sat|Sun), )?(\d+) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d{2,4}) (\d{2}):(\d{2})(:(\d{2})?) (\S{1,4}|(\+|\-)\d{4})</param>
     </data>
   </define>
 </grammar>
