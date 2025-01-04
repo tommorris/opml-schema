@@ -126,6 +126,12 @@
             <data type="int" />
           </element>
         </optional>
+        <optional>
+          <element name="lastCursor">
+            <a:documentation xml:lang="en">Used in the OPML 2.0 Spec (http://opml.org/spec2.opml?format=opml).</a:documentation>
+            <data type="int" />
+          </element>
+        </optional>
       </interleave>
     </element>
   </define>
