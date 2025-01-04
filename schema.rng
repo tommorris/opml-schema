@@ -132,6 +132,12 @@
             <data type="int" />
           </element>
         </optional>
+        <optional>
+          <element name="urlUpdateSocket">
+            <a:documentation xml:lang="en">The URL of the WebSocket endpoint for receiving real-time updates. This URI should point to a valid WebSocket server that clients can connect to in order to receive notifications or updates related to the data being managed. Used in the OPML 2.0 Spec (http://opml.org/spec2.opml?format=opml).</a:documentation>
+            <data type="anyURI" />
+          </element>
+        </optional>
       </interleave>
     </element>
   </define>
