@@ -76,6 +76,12 @@
           </element>
         </optional>
         <optional>
+          <element name="ownerTwitterScreenName">
+            <a:documentation xml:lang="en">The Twitter screen name of the owner, used to identify the owner on Twitter. This should be a valid Twitter username without the '@' symbol. Used in the OPML 2.0 Spec (http://opml.org/spec2.opml?format=opml).</a:documentation>
+            <data type="string" />
+          </element>
+        </optional>
+        <optional>
           <element name="docs">
             <a:documentation xml:lang="en">The HTTP address of documentation for the format used in the OPML file. It's probably a pointer to this page for people who might stumble across the file on a web server 25 years from now and wonder what it is.</a:documentation>
             <data type="anyURI" />
