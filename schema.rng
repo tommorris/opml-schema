@@ -229,10 +229,12 @@
         <data type="string" />
       </attribute>
     </optional>
-    <attribute name="htmlUrl">
-      <a:documentation xml:lang="en">The top-level link element from the RSS feed.</a:documentation>
-      <data type="anyURI"/>
-    </attribute>
+    <optional>
+      <attribute name="htmlUrl">
+        <a:documentation xml:lang="en">The top-level link element from the RSS feed.</a:documentation>
+        <data type="anyURI"/>
+      </attribute>
+    </optional>
     <optional>
       <attribute name="xmlUrl">
         <a:documentation xml:lang="en">The HTTP address of the RSS feed.</a:documentation>
